@@ -13,7 +13,8 @@ var Snake = (function () {
   var velocity = { x:0, y:0 };
   var player = { x: INITIAL_PLAYER.x, y: INITIAL_PLAYER.y };
 
-  var walls = false;
+  var walls = true
+;
 
   var fruit = { x:1, y:1 };
 
@@ -22,7 +23,8 @@ var Snake = (function () {
 
   var reward = 0;
   var points = 0;
-  var pointsMax = 0;
+  var pointsMax = 1000
+;
 
   var ActionEnum = { 'none':0, 'up':1, 'down':2, 'left':3, 'right':4 };
   Object.freeze(ActionEnum);
